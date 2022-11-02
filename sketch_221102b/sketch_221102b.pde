@@ -21,4 +21,8 @@ String[] fontList = PFont.list(); //To list all fonts available
 printArray(fontList); 
 titleFont = createFont("Haettenschweiler", 55); //Verified the font exists in processing.JAVA
 //
+//Layout or text space and typographical features
 rect(titleX, titleY, titleWidth, titleHeight); 
+//
+//Repeated Executed Code
+text( title, titleX, titleY, titleWidth, titleHeight );
