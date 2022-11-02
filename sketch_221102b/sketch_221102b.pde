@@ -1,8 +1,9 @@
 //Global Variables
-int appWidth, appHeight;
+int appWidth, appHeight, fontSize;
 float titleX, titleY, titleWidth, titleHeight;
 String title = "Wahoo";
 PFont titleFont;
+color blue=#0A8CC6, resetDefaultInk=#FFFFFF;
 //
 size(500, 600); //Portrait
 //Copy Display Algorithm
@@ -25,4 +26,8 @@ titleFont = createFont("Haettenschweiler", 55); //Verified the font exists in pr
 rect(titleX, titleY, titleWidth, titleHeight); 
 //
 //Repeated Executed Code
-text( title, titleX, titleY, titleWidth, titleHeight );
+fill(blue);
+fontSize = 50;
+textFont(titleFont, fontSize);
+text( title, titleX, titleY, titleWidth, titleHeight);
+fill(resetDefaultInk);
