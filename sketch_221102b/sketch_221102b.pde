@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight, fontSize;
 float titleX, titleY, titleWidth, titleHeight;
-String title = "Wahoo";
+String title = "apple";
 PFont titleFont;
 color blue=#0A8CC6, resetDefaultInk=#FFFFFF;
 //
@@ -24,6 +24,7 @@ titleFont = createFont("Haettenschweiler", 55); //Verified the font exists in pr
 //
 //Layout or text space and typographical features
 rect(titleX, titleY, titleWidth, titleHeight); 
+rect(footerX, footerY, footerWidth, footerHeight);
 //
 //Repeated Executed Code
 fill(blue);
