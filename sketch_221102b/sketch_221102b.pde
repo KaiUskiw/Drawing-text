@@ -1,7 +1,8 @@
 //Global Variables
 int appWidth, appHeight, fontSize;
 float titleX, titleY, titleWidth, titleHeight;
-String title = "apple";
+float footerX, footerY, footerWidth, footerHeight;
+String title = "apple", footer="Drip";
 PFont titleFont;
 color blue=#0A8CC6, resetDefaultInk=#FFFFFF;
 //
@@ -11,10 +12,12 @@ appWidth = width;
 appHeight = height;
 //
 //Population
-titleX = appWidth * 1/4;
+titleX = footerX = appWidth * 1/4;
 titleY = appHeight * 1/10;
-titleWidth = appWidth * 1/2;
-titleHeight = appHeight * 1/10;
+footerY = appHeight * 8/10;
+titleWidth = footerWidth = appWidth * 1/2;
+titleHeight = footerHeight = appHeight * 1/10;
+
 //
 //Text Setup, single executed code
 //Fonts from OS (Operating System)
@@ -32,4 +35,5 @@ textAlign(CENTER, CENTER);
 fontSize = 50; //Largest size given window
 textFont(titleFont, fontSize);
 text( title, titleX, titleY, titleWidth, titleHeight);
+text( footer, footerX, footerY, footerWidth, footerHeight);
 fill(resetDefaultInk);
